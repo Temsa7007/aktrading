@@ -3,7 +3,6 @@
 use App\Enums\PaymentStatus;
 
 return [
-    PaymentStatus::PAID   => 'Paid',
-    PaymentStatus::UNPAID => 'Unpaid',
-
+    PaymentStatus::PAID   => 'Payé',
+    PaymentStatus::UNPAID => 'Non payé',
 ];

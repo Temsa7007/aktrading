@@ -1,78 +1,77 @@
 <?php
 
-
 return [
-    'title'       => 'ShopKing Installer',
-    'next'        => 'Next Step',
+    'title'       => 'Installateur Ak Trading',
+    'next'        => 'Étape suivante',
     'welcome'     => [
-        'templateTitle' => 'Welcome',
-        'title'         => 'ShopKing Installer',
-        'message'       => 'Easy Installation and Setup Wizard.',
-        'next'          => 'Check Requirements',
+        'templateTitle' => 'Bienvenue',
+        'title'         => 'Installateur Ak Trading',
+        'message'       => 'Assistant d\'installation et de configuration facile.',
+        'next'          => 'Vérifier les exigences',
     ],
     'requirement' => [
-        'templateTitle' => 'Step 1 | Server Requirements',
-        'title'         => 'Server Requirements',
-        'next'          => 'Check Permissions',
+        'templateTitle' => 'Étape 1 | Exigences du serveur',
+        'title'         => 'Exigences du serveur',
+        'next'          => 'Vérifier les permissions',
         'version'       => 'version',
-        'required'      => 'required'
+        'required'      => 'requis'
     ],
     'permission'  => [
-        'templateTitle'       => 'Step 2 | Permissions',
+        'templateTitle'       => 'Étape 2 | Permissions',
         'title'               => 'Permissions',
-        'next'                => 'Site Setup',
-        'permission_checking' => 'Permission Checking'
+        'next'                => 'Configuration du site',
+        'permission_checking' => 'Vérification des permissions'
     ],
     'license' => [
-        'templateTitle'       => 'Step 3 | License',
-        'title'               => 'License Setup',
-        'next'                => 'Site Setup',
-        'active_process'      => 'Active Process',
+        'templateTitle'       => 'Étape 3 | Licence',
+        'title'               => 'Configuration de la licence',
+        'next'                => 'Configuration du site',
+        'active_process'      => 'Processus d\'activation',
         'label'               => [
-            'license_key' => 'License Key'
+            'license_key' => 'Clé de licence'
         ]
     ],
     'site'        => [
-        'templateTitle' => 'Step 3 | Site Setup',
-        'title'         => 'Site Setup',
-        'next'          => 'Database Setup',
+        'templateTitle' => 'Étape 3 | Configuration du site',
+        'title'         => 'Configuration du site',
+        'next'          => 'Configuration de la base de données',
         'label'         => [
-            'app_name' => 'App Name',
-            'app_url'  => 'App Url',
+            'app_name' => 'Nom de l\'application',
+            'app_url'  => 'URL de l\'application',
         ]
     ],
     'database'    => [
-        'templateTitle'            => 'Step 4 | Database Setup',
-        'title'                    => 'Database Setup',
-        'next'                     => 'Final Setup',
-        'fail_message'             => 'Could not connect to the database.',
-        'fail_mysql_version'       => 'Use mysql version 8.0 or later.',
-        'fail_mariadb_version'     => 'Use mysql version 10.2 or later.',
-        'fail_postgresql_version'  => 'Use mysql version 9.4 or later.',
-        'fail_sqlserver_version'   => 'Use mysql version 2008 or later.',
-        'fail_singlestore_version' => 'Use mysql version 8.1 or later.',
+        'templateTitle'            => 'Étape 4 | Configuration de la base de données',
+        'title'                    => 'Configuration de la base de données',
+        'next'                     => 'Configuration finale',
+        'fail_message'             => 'Impossible de se connecter à la base de données.',
+        'fail_mysql_version'       => 'Utilisez la version 8.0 ou ultérieure de MySQL.',
+        'fail_mariadb_version'     => 'Utilisez la version 10.2 ou ultérieure de MariaDB.',
+        'fail_postgresql_version'  => 'Utilisez la version 9.4 ou ultérieure de PostgreSQL.',
+        'fail_sqlserver_version'   => 'Utilisez la version 2008 ou ultérieure de SQL Server.',
+        'fail_singlestore_version' => 'Utilisez la version 8.1 ou ultérieure de SingleStore.',
         'label'                    => [
-            'database_connection' => 'Database Connection',
-            'database_host'       => 'Database Host',
-            'database_port'       => 'Database Port',
-            'database_name'       => 'Database Name',
-            'database_username'   => 'Database Username',
-            'database_password'   => 'Database Password',
+            'database_connection' => 'Connexion à la base de données',
+            'database_host'       => 'Hôte de la base de données',
+            'database_port'       => 'Port de la base de données',
+            'database_name'       => 'Nom de la base de données',
+            'database_username'   => 'Nom d\'utilisateur de la base de données',
+            'database_password'   => 'Mot de passe de la base de données',
         ]
     ],
     'final'       => [
-        'templateTitle'   => 'Step 6 | Final Setup',
-        'title'           => 'Final Setup',
-        'success_message' => 'Application has been successfully installed.',
-        'login_info'      => 'Login Information',
+        'templateTitle'   => 'Étape 6 | Configuration finale',
+        'title'           => 'Configuration finale',
+        'success_message' => 'L\'application a été installée avec succès.',
+        'login_info'      => 'Informations de connexion',
         'email'           => 'Email',
-        'password'        => 'Password',
+        'password'        => 'Mot de passe',
         'email_info'      => 'admin@example.com',
         'password_info'   => '123456',
-        'next'            => 'Finish',
+        'next'            => 'Terminer',
     ],
     'installed'   => [
-        'success_log_message' => 'Food King installer successfully INSTALLED on ',
-        'update_log_message'  => 'Food King Installer successfully UPDATED on ',
+        'success_log_message' => 'L\'installateur Ak Trading a été installé avec succès le ',
+        'update_log_message'  => 'L\'installateur Ak Trading a été mis à jour avec succès le ',
     ],
 ];

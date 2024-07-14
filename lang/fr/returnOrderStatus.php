@@ -3,9 +3,7 @@
 use App\Enums\ReturnOrderStatus;
 
 return [
-    ReturnOrderStatus::PENDING  => 'Pending',
-    ReturnOrderStatus::ACCEPT   => 'Accept',
-    ReturnOrderStatus::REJECTED => 'Rejected',
-
-
+    ReturnOrderStatus::PENDING  => 'En attente',
+    ReturnOrderStatus::ACCEPT   => 'Accepté',
+    ReturnOrderStatus::REJECTED => 'Rejeté',
 ];
