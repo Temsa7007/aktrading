@@ -630,6 +630,7 @@
         "manager" : "Gérant",
         "pos_operator" : "Opérateur de PDV"
     },
+    
     "button": {
         "add": "Ajouter",
         "save": "Enregistrer",
