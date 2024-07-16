@@ -31,7 +31,7 @@ return [
             'Ctype',
             'BCMath',
             'Zip',
-            'Imagick',
+            // 'Imagick',
             'Exif',
             'Fileinfo'
         ],
@@ -58,7 +58,7 @@ return [
     | License Validation Rules & Messages
     |--------------------------------------------------------------------------
     |
-    | This are the default form field validation rules. Available Rules: 
+    | This are the default form field validation rules. Available Rules:
     | https                                                            : //laravel.com/docs/5.4/validation#available-validation-rules
     |
     */
@@ -76,7 +76,7 @@ return [
     | Environment Site Wizard Validation Rules & Messages
     |--------------------------------------------------------------------------
     |
-    | This are the default form field validation rules. Available Rules: 
+    | This are the default form field validation rules. Available Rules:
     | https                                                            : //laravel.com/docs/5.4/validation#available-validation-rules
     |
     */
@@ -95,7 +95,7 @@ return [
     | Environment Database Wizard Validation Rules & Messages
     |--------------------------------------------------------------------------
     |
-    | This are the default form field validation rules. Available Rules: 
+    | This are the default form field validation rules. Available Rules:
     | https                                                            : //laravel.com/docs/5.4/validation#available-validation-rules
     |
     */
