@@ -2,7 +2,7 @@
 
     <header :class="isSticky === true ? 'fixed top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white' : 'mb-5 sm:mb-8 shadow-xs bg-white'">
         <div class="container py-3.5 px-4 lg:py-0">
-            <div class="flex items-center justify-between gap-5">
+            <div class="flex items-center justify-between gap-1">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
                     <button type="button" class="leading-none block lg:hidden"
@@ -86,9 +86,16 @@
 
                         <li class="header-nav-item">
                             <router-link class="header-nav-menu"
-                                         :class="checkIsPathAndRoutePathSame('/offers') ? 'router-link-active router-link-exact-active' : ''"
-                                         :to="{ name: 'frontend.offers' }">
+                                        :class="checkIsPathAndRoutePathSame('/offers') ? 'router-link-active router-link-exact-active' : ''"
+                                        :to="{ name: 'frontend.offers' }">
                                 {{ $t("label.offers") }}
+                            </router-link>
+                        </li>
+                        <li class="header-nav-item">
+                            <router-link class="header-nav-menu"
+                                        :class="checkIsPathAndRoutePathSame('/repair-section') ? 'router-link-active router-link-exact-active' : ''"
+                                        :to="{ name: 'frontend.repair-section' }">
+                                {{ $t("repair section") }}
                             </router-link>
                         </li>
                     </ul>
@@ -104,7 +111,7 @@
 
                 <!-- Language Start -->
                 <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
-                     class="relative group hidden lg:block">
+                        class="relative group hidden lg:block">
                     <button type="button" class="flex items-center gap-2 py-5 down-arrow">
                         <img :src="language.image" alt="language" class="w-4 h-4 rounded-full"/>
                         <span class="font-semibold capitalize">{{ language.name }}</span>
@@ -150,8 +157,8 @@
                         </div>
                         <nav class="flex flex-col py-2">
                             <router-link v-if="profile.role_id !== enums.roleEnum.CUSTOMER && Object.keys(authDefaultPermission).length > 0"
-                                         class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
-                                         :to="{ name: 'admin.dashboard' }">
+                                        class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
+                                        :to="{ name: 'admin.dashboard' }">
                                 <i class="text-sm text-[#A0A3BD] lab-fill-dashboard"></i>
                                 <span class="text-sm font-medium capitalize whitespace-nowrap">
                                                     {{ $t('menu.dashboard') }}
@@ -483,7 +490,7 @@ export default {
             }).catch();
         },
         logout: function () {
-            
+
             this.$store.dispatch("logout").then(res => {
                 this.$router.push({name: "frontend.home"});
             }).catch();

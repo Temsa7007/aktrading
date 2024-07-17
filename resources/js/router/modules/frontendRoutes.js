@@ -26,6 +26,7 @@ import CheckoutPaymentComponent from "../../components/frontend/checkout/payment
 import PaymentHeaderComponent from "../../components/frontend/checkout/payment/HeaderComponent";
 import ProductReviewComponent from "../../components/frontend/account/review/ProductReviewComponent";
 import MostPopularProductComponent from "../../components/frontend/product/MostPopularProductComponent.vue";
+import RepairSection from "../../components/frontend/repair-section/RepairSection.vue";
 
 export default [
     {
@@ -63,6 +64,15 @@ export default [
             isFrontend: true,
             auth: false,
         },
+    },
+    {
+        path: "/repair-section",
+        component: RepairSection,
+        name: "frontend.repair-section",
+        meta: {
+            isFrontend: true,
+            auth: false,
+        }
     },
     {
         path: "/promotion/:slug",
